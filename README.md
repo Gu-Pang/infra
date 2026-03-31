@@ -3,9 +3,13 @@
 이를 위해 모든 팀원은 개별적으로 DB를 띄우지 않고, 아래의 단일 `docker-compose` 파일을 사용하여 공통된 데이터베이스 인프라를 기동해야 합니다.
 
 해당 파일은 Gu-Pang 폴더 하위에 저장하시는 것을 추천드립니다.
+또한, 해당 위치에 `.env` 파일도 존재해야 합니다.
+
+
 예시) 
 
-<img width="491" height="145" alt="image" src="https://github.com/user-attachments/assets/5e88fe47-df6f-409f-bea9-5177d75cedfa" />
+<img width="489" height="166" alt="image" src="https://github.com/user-attachments/assets/f216e246-5314-45b3-babe-32cd84f4fb6c" />
+
 
 
 ## 명령어 가이드
