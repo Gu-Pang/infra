@@ -27,3 +27,22 @@ docker-compose -f docker-compose.infra.yaml down -v
 ```bash
 docker-compose -f docker-compose.infra.yaml logs -f
 ```
+
+### 예시) 해당 DB와 연동하는 Hub 서버의 docker-compose.yaml 파일
+```
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://gupang-db:5432/${DB_USERNAME}
+    networks:
+      - gupang-network
+
+networks:
+  gupang-network:
+    external: true
+```
